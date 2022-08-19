@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/9de9844bef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1> <span>Shadab</span>.Info</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header_text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Md Shadab</span> <br />Raza from India</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------- About Section ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src=" ">       <!--- Use cover photo here-->
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat dolorum nisi rem tempora
+                        quod ea vel quibusdam corporis eos maiores, natus perferendis fugit placeat laborum laudantium.
+                        Corrupti est labore unde? Reiciendis harum porro excepturi suscipit cum earum saepe non
+                        laudantium ab eos temporibus labore hic sapiente qui rerum nam eum ea quam pariatur, accusamus
+                        modi dolor. Exercitationem, sapiente veritatis.</p>
+
+
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+
+                    <div class="tab_content active_tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Wordpress Development</span><br>Designing Web/App interfaces. <br> Blogs related to Tech.</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab_content" id="Experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Add company</li>
+                            <li><span>add date</span><br>Add company </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab_content" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>MERN Stack Web Development</li>
+                            <li><span>2021</span><br>B.Tech from GITA Bhubaneswar</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------Services Section-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services_list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Wordpress Blogs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ------------------Portfolio Section-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="./Images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Website Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./Images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Wordpress Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./Images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, hic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- --------------------Contact Section-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact_left">
+                <h1 class="sub_title">Contact Me</h1>
+                <p>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    shadab.razamd@gmail.com
+                </p>
+                <p>
+                    <i class="fas fa-phone-square"></i>
+                    07750861928
+                </p>
+                <div class="social_icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="https://web.whatsapp.com/">
+                        <i class="fab fa-whatsapp"></i></a>
+
+                    <a href="https://www.linkedin.com/in/md-shadab-raza-99a093160/">
+                        <i class="fab fa-linkedin"></i></a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i> </a>
+                </div>
+
+                <a href="./Images/Shadab Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+
+            <div class="contact_right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="Message" rows="6" placeholder="Type Your Message Here..."></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>copyright &#169 shadab. Made for My Portfolio </p>
+    </div>
+</div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
