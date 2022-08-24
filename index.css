@@ -407,7 +407,7 @@ nav .fa{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./Images/Background_small.jpg);
+        background-image: url(./Images/Background_Image_small.jpg);
     }
 
     .header_text{
